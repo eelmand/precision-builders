@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link href="css/common.css" rel="stylesheet">
+	<link href="./css/common.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 	<!-- Top Menu Bar -->
@@ -26,7 +26,7 @@
 					<span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand" href="index.html">
-					<img src="img/logo.png" width="45" style="margin-top:-12px;" alt="Precision Builders Logo" />
+					<img src="img/logo.png" class="img-rounded" width="45" style="margin-top:-12px;" alt="Precision Builders Logo" />
 				</a>
 			</div>
 			<div class="collapse navbar-collapse" id="navbar-collapse">
@@ -40,12 +40,17 @@
 					<li>
 						<a class="projects" href="#">Projects</a>
 					</li>
+					<li>
+						<a class="login" href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-
-	<!-- Carousel -->
+	<div class="home">
+		<img class="img-responsive center-block" src="img/background.png">
+		<h2>DESIGN YOUR DREAM HOME!</h2>
+	<!-- Carousel 
 	<div id="pbCarousel" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators">
 			<li data-target="#pbCarousel" data-slide-to="0" class="active"></li>
@@ -89,24 +94,35 @@
 			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 			<span class="sr-only">Next</span>
 		</a>
-	</div><!-- /.carousel -->
+	</div>
 
 	<div class="containter">
 		<div class="row text-center">
-			<div class="col-lg-4">
+			<div class="col-md-4">
 				<img class="img-circle" src="img/imagine.png" width="140" height="140">
 				<h2>Imagine</h2>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-md-4">
 				<img class="img-circle" src="img/design.png" width="140" height="140">
 				<h2>Design</h2>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-md-4">
 				<img class="img-circle" src="img/build.png" width="140" height="140">
 				<h2>Build</h2>
 			</div>
 		</div>
 	</div>
+	-->
+	<section class="services-section">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-md-6 col-lg-3">
+				<img src="img/roofing.png" width=25>
+				<h4 class="text-capitalize">Roofing</h4>
+				<p> Big or small. </p>
+			</div>
+		</div>
+	</section>
 </body>
 
 </html>
