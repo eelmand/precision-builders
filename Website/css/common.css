@@ -4,12 +4,72 @@ Author: David Eelman
 Date: 2017-06-06
 */
 
+@media(max-width: 480px) {
+	h1 {font-size: 160%;}
+}
+
 html {
-  position: relative;
-  min-height: 100%;
+	position: relative;
+	min-height: 100%;
 }
 
 body { 
-  font-family: Tahoma, Georgia, serif; /* Default font - Tahoma */
-  margin-top: 50px; /* Footer */
+	font-family: 'Roboto Slab', serif;
+	margin-top: 50px; /* Top Navbar */
+	margin-bottom: 50px; /* Footer */
+	background-color:rgba(0, 0, 0, 0);
 } 
+
+textarea {
+	resize: none;
+}
+
+.google-maps {
+	position: relative;
+	padding-bottom: 25%;
+	height: 0;
+	overflow: hidden;
+}
+.google-maps iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.main-image {
+	position: relative;
+}
+
+.main-image-title {
+	background-color: rgba(0,0,0,0.75);
+	padding: 10px 0px 10px 0px;
+	border-width: 2px;
+	border-color: #0E5AAD;
+	border-style: solid;
+	border-left: none;
+	border-right: none;
+	text-align: center;
+	bottom: 20px;
+	width: 100%;
+	color: white;
+	text-decoration-color: grey;
+	position: absolute;
+}
+
+.navbar-default	{
+	border-bottom-width: 2px;
+	border-bottom-color: #0E5AAD;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	padding: 1rem;
+	border-top: 1px solid black;
+	background-color: ;
+}
+

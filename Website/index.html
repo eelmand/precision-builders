@@ -8,6 +8,8 @@
 	<meta name="description" content="This is the home page for Precision Builders"/>
 	<meta http-equiv="author" content="David Eelman"/>
 
+	<link rel="icon" href="img/logo.png">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -16,7 +18,7 @@
 </head>
 <body>
 	<!-- Top Menu Bar -->
-	<nav class="navbar navbar-fixed-top navbar-default">
+	<nav class="navbar navbar-fixed-top navbar-default bg-primary">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
@@ -31,25 +33,24 @@
 			</div>
 			<div class="collapse navbar-collapse" id="navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li>
-						<a class="about" href="#">About</a>
-					</li>
-					<li>
-						<a class="services" href="#">Services</a>
-					</li>
-					<li>
-						<a class="projects" href="#">Projects</a>
-					</li>
-					<li>
-						<a class="login" href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a>
-					</li>
+					<li><a class="about" href="#">About</a></li>
+					<li><a class="services" href="#">Services</a></li>
+					<li><a class="projects" href="projects.html">Projects</a></li>
+					<li><a class="contact_us" href="contact_us.html">Contact Us</a></li>
+					<li><a class="login" href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 	<div class="home">
-		<img class="img-responsive center-block" src="img/background.png">
-		<h2>DESIGN YOUR DREAM HOME!</h2>
+		<div class="main-image">
+			<img class="img-responsive center-block" src="img/background.png">
+			<h1 class="main-image-title">BUILD YOUR DREAM HOME!</h1>
+		</div>
+	</div>
+	<footer class="container-fluid text-center">
+		<p>Copyright &copy; 2017 Precision Builders</p>
+	</footer>	
 	<!-- Carousel 
 	<div id="pbCarousel" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators">
@@ -112,7 +113,7 @@
 			</div>
 		</div>
 	</div>
-	-->
+	
 	<section class="services-section">
 		<div class="container">
 			<div class="row text-center">
@@ -122,7 +123,7 @@
 				<p> Big or small. </p>
 			</div>
 		</div>
-	</section>
+	</section>-->
 </body>
 
 </html>
