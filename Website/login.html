@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Login</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="This is the login page for Precision Builders"/>
+	<meta http-equiv="author" content="David Eelman"/>
+
+	<link rel="icon" href="img/logo.png">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+	<link href="./css/common.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+	<!-- Top Menu Bar -->
+	<nav class="navbar navbar-fixed-top navbar-default bg-primary">
+		<?php include 'php/top-menu.php';?>	
+	</nav>
+	<div class="container">
+		<h1 class="page-header text-center">Login</h1>
+		<form class="login-form center-block" action="php/authenticate.php" id="login" method="post">
+			<div class="form-group">
+				<label for="username"><span class="glyphicon glyphicon-user"></span> Username</label>
+				<input type="username" class="form-control" name="username" id="username" placeholder="Enter username">
+			</div>
+			<div class="form-group">
+				<label for="password"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+				<input type="password" class="form-control" name="password" id="password" placeholder="Enter password">
+			</div>
+			<div class="checkbox">
+				<label><input type="checkbox" name="remember"> Remember me</label>
+			</div>
+			<button type="submit" class="btn btn-default btn-primary btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+		</form>
+	</div>
+	<footer class="container-fluid text-center">
+		<p>Copyright &copy; 2017 Precision Builders</p>
+	</footer>	
+</body>
+
+</html>
