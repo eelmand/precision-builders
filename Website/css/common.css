@@ -6,6 +6,8 @@ Date: 2017-06-06
 
 @media(max-width: 480px) {
 	h1 {font-size: 160%;}
+	h2 {font-size: 160%;}
+	.full-logo {max-width: 60%;}
 }
 
 html {
@@ -46,6 +48,17 @@ textarea {
 
 .main-image {
 	position: relative;
+}
+
+.full-logo {
+	position: absolute;
+	border-radius: 5px;
+	bottom: 100px;
+	width: 400px;
+	height: auto;
+	left: 50%; 
+	transform: translate(-50%,0); 
+	z-index: 1
 }
 
 .main-image-title {
