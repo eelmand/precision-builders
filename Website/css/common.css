@@ -141,3 +141,7 @@ footer {
 .filterable .filters input[disabled]:-ms-input-placeholder {
     color: #333;
 }
+
+.input-group-addon {
+	cursor: pointer;
+}

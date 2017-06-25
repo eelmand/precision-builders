@@ -1,3 +1,5 @@
+<?php include 'php/admin_only.php';?>	
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,6 +17,7 @@
 	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">
 	<link href="./css/common.css" type="text/css" rel="stylesheet">
 	<link href="./css/bootstrap-clockpicker.css" type="text/css" rel="stylesheet">
+	<link href="./css/datepicker.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 	<!-- Top Menu Bar -->
@@ -119,22 +122,27 @@
 				</table>
 			</div>
 			<div id="bob" class="tab-pane fade">
-				<h3>Menu 1</h3>
+				<h3>Start Time</h3>
 				<div class="input-group clockpicker" data-align="top" data-autoclose="true">
 					<input type="text" class="form-control" value="13:14">
 					<span class="input-group-addon">
 						<span class="glyphicon glyphicon-time"></span>
 					</span>
 				</div>
-				<p>Some content in menu 1.</p>
+				<div id="datepicker" class="input-group" data-align="top" data-autoclose="true">
+					<input type="text" id="this" class="form-control datepicker" value="2017-06-05" style="padding-left: 12px">
+					<span class="input-group-addon">
+						<span class="glyphicon glyphicon-calendar"></span>
+					</span>
+				</div>
 			</div>
 			<div id="tom" class="tab-pane fade">
-				<h3>Menu 2</h3>
-				<p>Some content in menu 2.</p>
-			</div>
-			<div id="stan" class="tab-pane fade">
 				<h3>Menu 1</h3>
 				<p>Some content in menu 1.</p>
+			</div>
+			<div id="stan" class="tab-pane fade">
+				<h3>Menu 2</h3>
+				<p>Some content in menu 2.</p>
 			</div>
 		</div>
 	</div>
@@ -151,6 +159,7 @@
 	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
 	
 	<script type="text/javascript" charset="utf8" src="js/bootstrap-clockpicker.js"></script>
+	<script type="text/javascript" charset="utf8" src="js/bootstrap-datepicker.js"></script>
 
 	<script>
 	$(document).ready(function() {
@@ -159,6 +168,12 @@
 	</script>
 	<script type="text/javascript">
 		$('.clockpicker').clockpicker();
+	</script>
+	<script type="text/javascript">
+		$('#datepicker').find('.glyphicon-calendar').on('click', function(){
+    		$(this).parent().siblings('#this').trigger('focus');
+		});
+		$('.datepicker').datepicker();
 	</script>
 </body>
 
