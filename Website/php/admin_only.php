@@ -1,6 +1,6 @@
 <?php
 
-include "admin_info.php"; // include Admin Login Info 
+include "login_info.php"; // include Admin Login Info 
 
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
